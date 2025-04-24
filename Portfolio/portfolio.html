@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hariharan P S | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #f1f1f1;
+      line-height: 1.6;
+      transition: background 0.5s ease;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      background: #000000cc;
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.6);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      background: linear-gradient(to right, #ff00cc, #3333ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    header p {
+      font-size: 1rem;
+      color: #cccccc;
+      margin-top: 10px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background: #111;
+      padding: 15px 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+      gap: 10px;
+    }
+
+    nav button {
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+      border: none;
+      padding: 10px 20px;
+      color: #fff;
+      border-radius: 30px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    nav button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #a777e3, #6e8efb);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      display: none;
+      background: #1a1a1ad9;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 40px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #00c6ff;
+      padding-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    .card {
+      background: #2e2e2e;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #00c6ff;
+      color: #111;
+      padding: 8px 16px;
+      border-radius: 25px;
+      margin: 6px;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      background: #000;
+      color: #aaa;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1>Hariharan P S</h1>
+    <p>Full Stack Developer | AI Enthusiast</p>
+    <p><i class="fas fa-envelope"></i> reachhariece@gmail.com | <i class="fas fa-phone"></i> +91 9345518806 | Chennai, India</p>
+  </header>
+
+  <nav>
+    <button onclick="showSection('summary')">Summary</button>
+    <button onclick="showSection('experience')">Experience</button>
+    <button onclick="showSection('education')">Education</button>
+    <button onclick="showSection('skills')">Skills</button>
+    <button onclick="showSection('projects')">Projects</button>
+    <button onclick="showSection('certifications')">Certifications</button>
+    <button onclick="showSection('achievements')">Achievements</button>
+  </nav>
+
+  <div class="container">
+    <section id="summary" class="active">
+      <h2>Summary</h2>
+      <p>Skilled Software Developer with a strong foundation in Pega, full-stack development, and modern AI tools. Experienced in building web applications, integrating LLMs, and deploying scalable solutions using tools like FastAPI, React, and Hugging Face.</p>
+    </section>
+
+    <section id="experience">
+      <h2>Professional Experience</h2>
+      <div class="card">
+        <h3>Full Stack Developer – LivBig Technologies (Apr 2023 – Present)</h3>
+        <ul>
+          <li>2+ years of proven expertise in software development, with a strong focus on creating efficient and reliable
+            systems</li>
+          <li>Developed and optimized responsive web applications using HTML, CSS, JavaScript, and React.js, ensuring
+            performance, accessibility, and cross-browser compatibility.</li>
+          <li>Integrated and tested backend services using RESTful APIs, MySQL, and XAMPP , enabling seamless
+            frontend-backend communication.</li>
+          <li>Built and deployed cloud-native applications with scalable REST APIs using FastAPI, improving system reliability
+            and efficiency.</li>
+          <li>Fine-tuned LLMs such as GPT-2 and Mistral, and implemented Retrieval-Augmented Generation (RAG) using
+            Pinecone and Chroma vector databases.</li>
+          <li>Utilized Pandas and NumPy for efficient data manipulation, preprocessing, and analysis in various ML workflows.
+            Implemented LangChain workflows for integrating GPT-4, Claude, and other LLMs in custom GenAI applications.</li>
+          <li>Worked with Hugging Face Transformers for downloading, fine-tuning, and deploying NLP models in production
+            environments.</li>
+          <li>Automated data pipelines and scheduled tasks using Apache Airflow, improving data orchestration and
+            processing.</li>
+          <li>Followed Agile development, practiced DevOps workflows, used Git for version control, and gained basic
+            exposure to iOS and hybrid app development.</li>
+          <li>Skilled in Python and experienced with AI frameworks such as TensorFlow, PyTorch, and others.</li>
+          <li>Hands-on experience in MLOps, deploying AI models, and optimizing model performance.</li>
+          <li>Built scalable backend applications using Spring Boot to display and manage KYC data.</li>
+          <li>Developed features for viewing and processing system log files, ensuring efficient backend data handling.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Intern – Virtusa (Jan 2023 – Apr 2023)</h3>
+        <ul>
+          <li>Developed a standalone application using Pega Automation Tool.</li>
+          <li>Utilized numerous Pega rules to streamline and automate processes, demonstrating strong skills in Pega.</li>
+          <li>Used front end technologies such as HTML and CSS in Pega.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <p><strong>BITS Pilani</strong> – M.Tech in Data Science and Engineering (2024 – Present)</p>
+      <p><strong>Anna University</strong> – B.E. in ECE – CGPA: 8.86 (2019 – 2023)</p>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <span>Python</span><span>Java</span><span>SQL</span><span>React</span><span>Spring Boot</span><span>FastAPI</span>
+      <span>Pega</span><span>Neo4j</span><span>Hugging Face</span><span>Pandas</span><span>PyTorch</span><span>TensorFlow</span>
+      <span>LangChain</span><span>Power BI</span><span>Tableau</span><span>Git</span><span>Azure</span><span>GCP</span>
+      <span>LLM</span><span>ML</span><span>NodeJs</span><span>NLP</span><span>AI Model Deployement</span><span>Fine tuning</span>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="card">
+        <h3>AI Chatbot with GPT-2 + FastAPI + React</h3>
+        <p>Built an AI-powered chatbot using a fine-tuned GPT-2 model for natural language generation. Developed the backend with
+          FastAPI to serve the model, and integrated it with a React.js frontend for seamless user interaction. Implemented efficient
+          model training, API responses, and real-time communication between frontend and backend. Demonstrated strong skills in
+          machine learning, model deployment, and full-stack development.</p>
+      </div>
+      <div class="card">
+        <h3>Audio Feedback Sentiment Analyzer</h3>
+        <p>Developed a standalone dashboard application using python Django which takes Excel files or SQL as data source and
+          using Machine learning model it provides sentiment of feedback. Used front end technologies like HTML, CSS, JavaScript,
+          API Graph to create a dashboard comparing various features.</p>
+      </div>
+      <div class="card">
+        <h3>Udemy Replica</h3>
+        <p>I developed a Udemy-style online learning platform using React for the frontend and SQL for the backend. To manage the
+          SQL database, I utilized XAMPP, which allowed for efficient data retrieval and display of available courses. The application
+          features a user-friendly interface that lists all courses for users to browse and access. I also implemented Node.js and Express
+          for the backend, enabling CORS for seamless communication between the client and server.</p>
+      </div>
+      <div class="card">
+        <h3>Neo4j Symptom-Disease Graph</h3>
+        <p>Developed a web scraping solution to extract disease and symptom data from the nidirect.gov.uk website. Stored the data in a
+          CSV file and integrated it into a Neo4j database, creating Disease and Symptom nodes with relationships. Demonstrated
+          proficiency in Python for data scraping, CSV handling, and Neo4j for data visualization and querying.</p>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Pega Certified System Architect & Senior System Architect</li>
+        <li>Salesforce AI Associate & Specialist</li>
+        <li>Google Cloud Platform Fundamentals</li>
+        <li>Certified Cloud Security Professional – EH Academy</li>
+        <li>Cybersecurity Essentials – Cisco</li>
+      </ul>
+    </section>
+
+    <section id="achievements">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Best Project Award – Sentiment Analysis</li>
+        <li>District & State-level recognition in sports</li>
+        <li>Guest speaker at college symposium</li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Hariharan P S | All Rights Reserved
+  </footer>
+</body>
+
+</html>
